@@ -1,0 +1,30 @@
+AUDITORÍA QA - CityFixApp (Cristian Suarez)
+
+Auditor: KikoJimenez
+Fecha: 2026-06-04
+Resultado: ✅ APROBADO - Todas las pruebas pasan en verde
+
+========================================
+ARQUITECTURA DE INFRAESTRUCTURA
+========================================
+
+Contenedor Docker
+- Imagen base: node:20-alpine (ligera y optimizada)
+- El contenedor instala dependencias con npm install
+- Al iniciar ejecuta automáticamente npm test
+
+Conexión a Supabase
+- Conexión exitosa a proyecto activo de Supabase
+- Retorna 5 reportes reales con estructura correcta
+
+========================================
+EVIDENCIA DE PRUEBAS
+========================================
+
+Test                                              Resultado
+Debe obtener los reportes guardados en Supabase   ✅ PASS
+Cada reporte debe tener los datos                 ✅ PASS
+
+Cantidad de reportes obtenidos: 5
+Tiempo de ejecución: 2.416s
+Código de salida: 0
